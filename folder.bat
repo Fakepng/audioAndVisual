@@ -1,6 +1,7 @@
 echo OFF
 echo Welcome Sot!
 echo Folder version 1.0.0
+echo Author: Fakepng
 
 rem to set default RAW extension change "" to extension e.g. .raw
 set RAWEXTENSION=cr2
