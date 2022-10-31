@@ -6,6 +6,8 @@ Batch files for audio and visual at SW2
 | ------ | ------------------------------------------------------------------------ | ------- |
 | folder | Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders | 1.0.0   |
 
+---
+
 ## folder
 
 > Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders **_Version: 1.0.0_**
@@ -27,3 +29,5 @@ Batch files for audio and visual at SW2
 #### Notes
 
 [^1]: If you are using a different camera, you do not need to change the `RAWEXTENSION` variable. The script will prompt you for the extension of your raw files.
+
+---
