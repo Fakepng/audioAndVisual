@@ -4,18 +4,18 @@ Batch files for audio and visual at SW2
 
 | Name   | Description                                                              | Version |
 | ------ | ------------------------------------------------------------------------ | ------- |
-| folder | Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders | 1.1.2   |
+| folder | Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders | 1.1.4   |
 
 ---
 
 ## folder
 
-> Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders **_Version: 1.1.2_**
+> Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders **_Version: 1.1.4_**
 
 ### Before using[^1]
 
 1. Edit the `folder.bat` file in your favorite text editor
-2. Change the `RAWEXTENSION` in line 8 variable to the extension of your raw files
+2. Change the `RAWEXTENSION` in line 7 variable to the extension of your raw files
 3. Save the file
 
 ### How to use
