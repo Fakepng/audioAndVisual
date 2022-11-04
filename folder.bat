@@ -1,12 +1,12 @@
 echo OFF
 echo Welcome Sot!
-echo Folder version 1.1.2
+echo Folder version 1.1.4
 echo Author: Fakepng
 
-:main
 rem to set default RAW extension change "" to extension e.g. .raw
 set RAWEXTENSION=cr2
 
+:main
 set /p UserInputPath=What Directory would you like?: 
 
 :ready
@@ -65,6 +65,7 @@ echo Finished!
 set /p UserInput=Would you like to run again? (Y/N):
 if %UserInput%==y goto main
 if %UserInput%==Y goto main
+set UserInputPath=%UserInput%
 if exist %UserInput%\*.jpg goto ready
 if exist %UserInput%\*.%RAWEXTENSION% goto ready
 if exist %UserInput%\*.mp4 goto ready
