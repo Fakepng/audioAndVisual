@@ -1,12 +1,12 @@
 echo OFF
 echo Welcome Sot!
-echo Folder version 1.0.0
+echo Folder version 1.1.0
 echo Author: Fakepng
 
+:main
 rem to set default RAW extension change "" to extension e.g. .raw
 set RAWEXTENSION=cr2
 
-:main
 set /p UserInputPath=What Directory would you like?: 
 echo You have selected %UserInputPath%
 
@@ -16,13 +16,13 @@ if %RAWEXTENSION% == "" (
   set /p RAWEXTENSION=What is the RAW file extension?: 
 )
 
-if not exist %UserInputPath%\*.%RAWEXTENSION% (
+if not exist "%UserInputPath%"\*.%RAWEXTENSION% (
   echo Default RAW extension is not found
   set /p RAWEXTENSION=What is the RAW file extension?: 
 )
 
 echo Checking if RAW folder exists...
-if exist %UserInputPath%\RAW (
+if exist "%UserInputPath%"\RAW (
   echo RAW folder already exists!
 ) else (
   if not exist %UserInputPath%\*.%RAWEXTENSION% (
@@ -63,3 +63,6 @@ echo Finished!
 set /p UserInput=Would you like to run again? (Y/N):
 if %UserInput%==y goto main
 if %UserInput%==Y goto main
+if exit %UserInput%\*.jpg goto main
+if exit %UserInput%\*.%RAWEXTENSION% goto main
+if exit %UserInput%\*.mp4 goto main
