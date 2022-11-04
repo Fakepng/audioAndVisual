@@ -4,13 +4,13 @@ Batch files for audio and visual at SW2
 
 | Name   | Description                                                              | Version |
 | ------ | ------------------------------------------------------------------------ | ------- |
-| folder | Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders | 1.1.0   |
+| folder | Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders | 1.1.1   |
 
 ---
 
 ## folder
 
-> Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders **_Version: 1.1.0_**
+> Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders **_Version: 1.1.1_**
 
 ### Before using[^1]
 
