@@ -1,6 +1,6 @@
 echo OFF
 echo Welcome Sot!
-echo Folder version 1.1.0
+echo Folder version 1.1.1
 echo Author: Fakepng
 
 :main
@@ -63,6 +63,6 @@ echo Finished!
 set /p UserInput=Would you like to run again? (Y/N):
 if %UserInput%==y goto main
 if %UserInput%==Y goto main
-if exit %UserInput%\*.jpg goto main
-if exit %UserInput%\*.%RAWEXTENSION% goto main
-if exit %UserInput%\*.mp4 goto main
+if exist %UserInput%\*.jpg goto main
+if exist %UserInput%\*.%RAWEXTENSION% goto main
+if exist %UserInput%\*.mp4 goto main
