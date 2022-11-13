@@ -2,9 +2,10 @@
 
 Batch files for audio and visual at SW2
 
-| Name   | Description                                                              | Version |
-| ------ | ------------------------------------------------------------------------ | ------- |
-| folder | Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders | 1.1.4   |
+| Name   | Description                                                                   | Version |
+| ------ | ----------------------------------------------------------------------------- | ------- |
+| folder | Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders      | 1.1.4   |
+| pick   | Use to choose which files to use and rename all file base on their date taken | 0.0.1   |
 
 ---
 
@@ -29,5 +30,22 @@ Batch files for audio and visual at SW2
 #### Notes
 
 [^1]: If you are using a different camera, you do not need to change the `RAWEXTENSION` variable. The script will prompt you for the extension of your raw files.
+
+---
+
+## pick
+
+> Use to choose which files to use and rename all file base on their date taken **_Version: 0.0.1_**
+
+### How to use
+
+1. Run `pick.exe`
+2. At first prompt, enter the path to the folder containing the files to be pick
+3. At second prompt, enter the path to the folder where the files will be copied to
+4. Type the name of the file you want to copy and press enter[^2]
+
+#### Notes
+
+[^2]: Note that it is not necessary to type every character of the file name. The script will search for the file name and copy the first file that matches the search.
 
 ---
