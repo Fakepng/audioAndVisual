@@ -8,7 +8,7 @@ a = Analysis(
     ['exifRemover\\exifRemover.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('C:\\Users\\Krit0\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\grapheme\\data\\grapheme_break_property.json', 'grapheme\\data')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

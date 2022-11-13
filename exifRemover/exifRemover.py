@@ -1,5 +1,5 @@
 #Welcome Sot!
-#exifRemover Version 0.0.1
+#exifRemover Version 0.0.2
 #Author: Fakepng
 
 import os
@@ -27,10 +27,11 @@ def main():
 
   print("Processing...")
   for image in imagesList:
-    print("Processing: " + image)
-    t = threading.Thread(target=exifRemover, args=(folderToProcess + "/" + image,))
-    threads.append(t)
-    t.start()
+    if (image.endswith(".png") or image.endswith(".jpg")):
+      print("Processing: " + image)
+      t = threading.Thread(target=exifRemover, args=(folderToProcess + "/" + image,))
+      threads.append(t)
+      t.start()
 
 
   with alive_bar(len(threads)) as bar:
