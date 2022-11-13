@@ -2,10 +2,11 @@
 
 Batch files for audio and visual at SW2
 
-| Name   | Description                                                                   | Version |
-| ------ | ----------------------------------------------------------------------------- | ------- |
-| folder | Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders      | 1.1.4   |
-| pick   | Use to choose which files to use and rename all file base on their date taken | 0.0.1   |
+| Name        | Description                                                                   | Version |
+| ----------- | ----------------------------------------------------------------------------- | ------- |
+| folder      | Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders      | 1.1.4   |
+| pick        | Use to choose which files to use and rename all file base on their date taken | 0.0.1   |
+| exifRemover | Use to remove all exif data from files                                        | 0.0.1   |
 
 ---
 
@@ -47,5 +48,16 @@ Batch files for audio and visual at SW2
 #### Notes
 
 [^2]: Note that it is not necessary to type every character of the file name. The script will search for the file name and copy the first file that matches the search.
+
+---
+
+## exifRemover
+
+> Use to choose which files to use and rename all file base on their date taken **_Version: 0.0.1_**
+
+### How to use
+
+1. Run `exifRemover.exe`
+2. At first prompt, enter the path to the folder containing the files to be exif removed
 
 ---
