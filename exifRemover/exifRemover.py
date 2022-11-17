@@ -1,5 +1,5 @@
 #Welcome Sot!
-#exifRemover Version 0.1.1
+#exifRemover Version 0.1.2
 #Author: Fakepng
 
 import os
@@ -21,11 +21,11 @@ def exifRemover(image):
 
   if len(imageExif):
     if imageExif[274] == 3:
-      imageWithoutExif = imageWithoutExif.transpose(Image.ROTATE_180)
+      imageWithoutExif = imageWithoutExif.transpose(method = Image.Transpose.ROTATE_180)
     elif imageExif[274] == 6:
-      imageWithoutExif = imageWithoutExif.transpose(Image.ROTATE_270)
+      imageWithoutExif = imageWithoutExif.transpose(method = Image.Transpose.ROTATE_270)
     elif imageExif[274] == 8:
-      imageWithoutExif = imageWithoutExif.transpose(Image.ROTATE_90)
+      imageWithoutExif = imageWithoutExif.transpose(method = Image.Transpose.ROTATE_90)
 
   imageWithoutExif.save(image)
   return image

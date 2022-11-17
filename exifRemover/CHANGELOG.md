@@ -4,6 +4,12 @@
 
 ---
 
+## [0.1.2] 2022-11-18
+
+### Minor Changes
+
+- Fix Pillow transpose decapitated in Pillow 10
+
 ## [0.1.1] 2022-11-18
 
 ### Major Changes
