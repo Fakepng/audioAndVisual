@@ -1,10 +1,10 @@
 #Welcome Sot!
-#exifRemover Version 0.1.0
+#exifRemover Version 0.1.1
 #Author: Fakepng
 
 import os
 from PIL import Image
-from multiprocessing import Pool
+from multiprocessing import Pool, freeze_support
 import tkinter as tk
 from tkinter import filedialog
 from alive_progress import alive_bar
@@ -14,9 +14,19 @@ root.withdraw()
 
 def exifRemover(image):
   imageToProcess = Image.open(image)
+  imageExif = imageToProcess.getexif()
   imageData = list(imageToProcess.getdata())
   imageWithoutExif = Image.new(imageToProcess.mode, imageToProcess.size)
   imageWithoutExif.putdata(imageData)
+
+  if len(imageExif):
+    if imageExif[274] == 3:
+      imageWithoutExif = imageWithoutExif.transpose(Image.ROTATE_180)
+    elif imageExif[274] == 6:
+      imageWithoutExif = imageWithoutExif.transpose(Image.ROTATE_270)
+    elif imageExif[274] == 8:
+      imageWithoutExif = imageWithoutExif.transpose(Image.ROTATE_90)
+
   imageWithoutExif.save(image)
   return image
 
@@ -43,4 +53,5 @@ def main():
   print("Done!")
 
 if __name__ == "__main__":
+  freeze_support()
   main()
