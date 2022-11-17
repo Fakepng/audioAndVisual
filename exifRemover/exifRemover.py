@@ -1,10 +1,10 @@
 #Welcome Sot!
-#exifRemover Version 0.0.2
+#exifRemover Version 0.1.0
 #Author: Fakepng
 
 import os
-import threading
 from PIL import Image
+from multiprocessing import Pool
 import tkinter as tk
 from tkinter import filedialog
 from alive_progress import alive_bar
@@ -18,26 +18,27 @@ def exifRemover(image):
   imageWithoutExif = Image.new(imageToProcess.mode, imageToProcess.size)
   imageWithoutExif.putdata(imageData)
   imageWithoutExif.save(image)
+  return image
 
 def main():
-  threads = []
   folderToProcess = filedialog.askdirectory()
 
   imagesList = os.listdir(folderToProcess)
 
-  print("Processing...")
+  filteredImagesList = []
+
   for image in imagesList:
-    if (image.endswith(".png") or image.endswith(".jpg")):
-      print("Processing: " + image)
-      t = threading.Thread(target=exifRemover, args=(folderToProcess + "/" + image,))
-      threads.append(t)
-      t.start()
+    if image.endswith(".ini"):
+      continue
+    filteredImagesList.append(folderToProcess + "/" + image)
 
+  print("Processing...")
+  with alive_bar(len(filteredImagesList)) as bar:
+    with Pool() as pool:
+      results = pool.imap_unordered(exifRemover, filteredImagesList)
 
-  with alive_bar(len(threads)) as bar:
-    for t in threads:
-      t.join()
-      bar()
+      for _ in results:
+        bar()
   
   print("Done!")
 

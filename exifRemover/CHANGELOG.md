@@ -4,6 +4,12 @@
 
 ---
 
+## [0.1.0] 2022-11-17
+
+### Major Changes
+
+- Working as intended
+
 ## [0.0.2] 2022-11-13
 
 ### Major Changes
