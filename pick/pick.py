@@ -1,5 +1,5 @@
 #Welcome Sot!
-#Pick Version 0.0.1
+#Pick Version 0.1.0
 #Author: Fakepng
 
 import os
@@ -41,9 +41,13 @@ def main():
 
         os.rename(processedImageFolder + "/" + image, processedImageFolder + "/" + newImageName + ".jpg")
 
+      else:
+        continue
+
       if found:
         break
-    if not found:
+
+    else:
       print("Image not found")
 
 if __name__ == "__main__":
