@@ -1,5 +1,5 @@
 #Welcome Sot!
-#Pick Version 0.0.1
+#Pick Version 0.0.2
 #Author: Fakepng
 
 import os
@@ -11,7 +11,7 @@ root = tk.Tk()
 root.withdraw()
 
 def main():
-  processImageFolder = filedialog.askdirectory()
+  processImageFolder = filedialog.askdirectory(title='Select a folder')
 
   imagesList = os.listdir(processImageFolder)
 

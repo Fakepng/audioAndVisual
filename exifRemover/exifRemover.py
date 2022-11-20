@@ -1,5 +1,5 @@
 #Welcome Sot!
-#exifRemover Version 0.1.2
+#exifRemover Version 0.1.3
 #Author: Fakepng
 
 import os
@@ -31,7 +31,11 @@ def exifRemover(image):
   return image
 
 def main():
-  folderToProcess = filedialog.askdirectory()
+  folderToProcess = filedialog.askdirectory(title='Select a folder')
+
+  if folderToProcess == '':
+    print('No folder selected')
+    return
 
   imagesList = os.listdir(folderToProcess)
 

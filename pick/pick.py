@@ -1,5 +1,5 @@
 #Welcome Sot!
-#Pick Version 0.1.0
+#Pick Version 0.1.1
 #Author: Fakepng
 
 import os
@@ -12,8 +12,12 @@ root = tk.Tk()
 root.withdraw()
 
 def main():
-  originalImageFolder = filedialog.askdirectory()
-  processedImageFolder = filedialog.askdirectory()
+  originalImageFolder = filedialog.askdirectory(title='Select a folder of original images')
+  processedImageFolder = filedialog.askdirectory(title='Select a final destination folder')
+
+  if originalImageFolder == '' or processedImageFolder == '':
+    print('No folder selected')
+    return
 
   imagesList = os.listdir(originalImageFolder)
 

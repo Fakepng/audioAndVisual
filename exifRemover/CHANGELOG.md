@@ -4,6 +4,12 @@
 
 ---
 
+## [0.1.3] 2022-11-20
+
+### Minor Changes
+
+- Descriptive text for folder picker
+
 ## [0.1.2] 2022-11-18
 
 ### Minor Changes

@@ -5,9 +5,9 @@ Batch files for audio and visual at SW2
 | Name        | Description                                                                   | Version |
 | ----------- | ----------------------------------------------------------------------------- | ------- |
 | folder      | Use to create and separate `.jpeg`, `raw`, and `.mp4` files into folders      | 1.1.4   |
-| pick        | Use to choose which files to use and rename all file base on their date taken | 0.1.0   |
-| exifRemover | Use to remove all exif data from files                                        | 0.1.2   |
-| owner       | Mass rename file                                                              | 0.0.1   |
+| pick        | Use to choose which files to use and rename all file base on their date taken | 0.1.1   |
+| exifRemover | Use to remove all exif data from files                                        | 0.1.3   |
+| owner       | Mass rename file                                                              | 0.0.2   |
 
 ---
 
@@ -37,7 +37,7 @@ Batch files for audio and visual at SW2
 
 ## pick
 
-> Use to choose which files to use and rename all file base on their date taken **_Version: 0.0.1_**
+> Use to choose which files to use and rename all file base on their date taken **_Version: 0.0.2_**
 
 ### How to use
 
@@ -54,7 +54,7 @@ Batch files for audio and visual at SW2
 
 ## exifRemover
 
-> Use to choose which files to use and rename all file base on their date taken **_Version: 0.1.2_**
+> Use to choose which files to use and rename all file base on their date taken **_Version: 0.1.3_**
 
 ### How to use
 
@@ -65,7 +65,7 @@ Batch files for audio and visual at SW2
 
 ## owner
 
-> Mass rename file **_Version: 0.0.1_**
+> Mass rename file **_Version: 0.0.2_**
 
 ### How to use
 
